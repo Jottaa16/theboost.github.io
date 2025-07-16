@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Boost - Community Manager & Redes Sociales</title>
     <link rel="stylesheet" href="styles.css">
+   
 </head>
 <body>
     <header>
@@ -17,7 +18,6 @@
                 <li><a href="Sobre mi.html">Sobre Mí</a></li>
                 <li><a href="Servicios.html">Servicios</a></li>
                 <li><a href="Mis trabajos.html">Mis trabajos</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
                 <li><a href="./Agenda/Agenda1.html">Agenda</a></li>
             </ul>
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
@@ -151,6 +151,50 @@
         </div>
     </section>
 
+    <!-- CHATBOT BURBUJA -->
+    <div class="chatbot-bubble">
+        <button class="chat-trigger" onclick="toggleChat()" id="chatTrigger">
+            <span id="chatIcon">💬</span>
+            <div class="notification-badge" id="notificationBadge">1</div>
+        </button>
+        
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h3>🤖 Asistente Virtual</h3>
+                <button class="close-chat" onclick="toggleChat()">×</button>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    <div class="avatar">🤖</div>
+                    <div class="message-bubble">
+                        ¡Hola! Soy tu asistente virtual. ¿En qué puedo ayudarte?
+                        <div class="quick-actions">
+                            <div class="quick-action" onclick="sendQuickMessage('Información')">Información</div>
+                            <div class="quick-action" onclick="sendQuickMessage('Soporte')">Soporte</div>
+                            <div class="quick-action" onclick="sendQuickMessage('Contacto')">Contacto</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="typing-indicator" id="typingIndicator">
+                <div class="avatar">🤖</div>
+                <div style="display: flex; align-items: center; margin-left: 8px;">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span style="margin-left: 8px; font-size: 12px; color: #666;">Escribiendo...</span>
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <input type="text" class="input-field" id="messageInput" placeholder="Escribe aquí..." onkeypress="handleKeyPress(event)">
+                <button class="send-button" id="sendButton" onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
     <section id="agenda" class="section">
         <div class="container">
             <h2>Agenda tu Consulta</h2>
@@ -203,5 +247,6 @@
         </div>
     </footer>
 <script src="script.js"></script>
+<script src="scriptboot.js"></script>
 </body>
 </html>

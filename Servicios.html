@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Boost - Community Manager & Redes Sociales</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Servicios - The Boost - Community Manager & Redes Sociales</title>
+    <link rel="stylesheet" href="stylesservicios.css">
 </head>
 <body>
     <header>
@@ -15,7 +15,7 @@
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="Sobre mi.html">Sobre Mí</a></li>
-                <li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="Servicios.html" class="active">Servicios</a></li>
                 <li><a href="Mis trabajos.html">Mis trabajos</a></li>
                 <li><a href="Contacto.html">Contacto</a></li>
                 <li><a href="./Agenda/Agenda1.html">Agenda</a></li>
@@ -23,84 +23,262 @@
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         </nav>
     </header>
-    <section id="inicio" class="hero">
+
+    <section class="hero-services">
         <div class="container">
             <div class="hero-content">
-                <h1>the boost</h1>
-                <p>Potenciamos tu presencia digital con estrategias innovadoras de community management y redes sociales</p>
-                <a href="#contacto" class="cta-button">Reservá tu turno</a>
+                <h1>Nuestros Servicios</h1>
+                <p>Soluciones integrales para potenciar tu presencia digital y conectar con tu audiencia</p>
             </div>
         </div>
     </section>
 
-    <section id="servicios" class="section">
+    <section class="services-detailed section">
         <div class="container">
-            <h2>Servicios</h2>
-            <div class="services-grid">
-                <div class="service-card">
+            <h2>¿Qué ofrecemos?</h2>
+            
+            <div class="service-detail">
+                <div class="service-content">
                     <div class="service-icon">🎨</div>
-                    <h3>Diseño de Contenido</h3>
-                    <p>Creación de contenido visual atractivo y coherente con tu marca para todas las plataformas.</p>
+                    <div class="service-info">
+                        <h3>Diseño de Contenido</h3>
+                        <p>Creamos contenido visual impactante y coherente con tu identidad de marca. Desde posts para redes sociales hasta stories, reels y contenido multimedia que capture la atención de tu audiencia.</p>
+                        <ul class="service-features">
+                            <li>Diseño de posts para Instagram, Facebook, LinkedIn</li>
+                            <li>Creación de stories y highlights</li>
+                            <li>Diseño de reels y contenido de video</li>
+                            <li>Plantillas personalizadas para tu marca</li>
+                            <li>Carruseles informativos y promocionales</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price">Desde $25.000/mes</span>
+                            <a href="Contacto.html" class="cta-button">Cotizar</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card">
+            </div>
+
+            <div class="service-detail reverse">
+                <div class="service-content">
                     <div class="service-icon">📊</div>
-                    <h3>Estrategia Digital</h3>
-                    <p>Desarrollo de estrategias personalizadas para maximizar tu alcance y engagement.</p>
+                    <div class="service-info">
+                        <h3>Estrategia Digital</h3>
+                        <p>Desarrollamos estrategias personalizadas basadas en el análisis de tu mercado, competencia y objetivos. Cada plan está diseñado para maximizar tu ROI y alcanzar tus metas específicas.</p>
+                        <ul class="service-features">
+                            <li>Análisis de mercado y competencia</li>
+                            <li>Definición de buyer personas</li>
+                            <li>Calendario de contenidos estratégico</li>
+                            <li>Planificación de campañas</li>
+                            <li>Optimización de perfiles y biografías</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price">Desde $35.000/mes</span>
+                            <a href="Contacto.html" class="cta-button">Cotizar</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card">
+            </div>
+
+            <div class="service-detail">
+                <div class="service-content">
                     <div class="service-icon">💬</div>
-                    <h3>Community Management</h3>
-                    <p>Gestión profesional de tus redes sociales y construcción de comunidades activas.</p>
+                    <div class="service-info">
+                        <h3>Community Management</h3>
+                        <p>Gestionamos tus redes sociales de forma profesional, construyendo una comunidad activa y comprometida. Nos encargamos de la interacción diaria, moderación y crecimiento orgánico.</p>
+                        <ul class="service-features">
+                            <li>Publicación diaria de contenido</li>
+                            <li>Respuesta a comentarios y mensajes</li>
+                            <li>Moderación de comunidades</li>
+                            <li>Gestión de crisis y reputación online</li>
+                            <li>Engagement y construcción de comunidad</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price">Desde $40.000/mes</span>
+                            <a href="Contacto.html" class="cta-button">Cotizar</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card">
+            </div>
+
+            <div class="service-detail reverse">
+                <div class="service-content">
                     <div class="service-icon">📈</div>
-                    <h3>Análisis y Métricas</h3>
-                    <p>Monitoreo y análisis detallado del rendimiento para optimizar resultados.</p>
+                    <div class="service-info">
+                        <h3>Análisis y Métricas</h3>
+                        <p>Monitoreamos y analizamos el rendimiento de tus redes sociales con reportes detallados. Utilizamos los datos para optimizar estrategias y mejorar resultados continuamente.</p>
+                        <ul class="service-features">
+                            <li>Reportes mensuales detallados</li>
+                            <li>Análisis de métricas de engagement</li>
+                            <li>Seguimiento de crecimiento de seguidores</li>
+                            <li>Análisis de alcance e impresiones</li>
+                            <li>Recomendaciones de optimización</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price">Desde $20.000/mes</span>
+                            <a href="Contacto.html" class="cta-button">Cotizar</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card">
+            </div>
+
+            <div class="service-detail">
+                <div class="service-content">
                     <div class="service-icon">🎯</div>
-                    <h3>Publicidad Digital</h3>
-                    <p>Campañas publicitarias efectivas en redes sociales para aumentar tu visibilidad.</p>
+                    <div class="service-info">
+                        <h3>Publicidad Digital</h3>
+                        <p>Diseñamos y ejecutamos campañas publicitarias efectivas en redes sociales. Optimizamos cada peso invertido para maximizar conversiones y alcanzar tus objetivos comerciales.</p>
+                        <ul class="service-features">
+                            <li>Campañas en Meta Ads (Facebook e Instagram)</li>
+                            <li>Publicidad en LinkedIn y Twitter</li>
+                            <li>Segmentación avanzada de audiencias</li>
+                            <li>Optimización continua de campañas</li>
+                            <li>Remarketing y campañas de conversión</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price">Desde $30.000/mes + presupuesto publicitario</span>
+                            <a href="Contacto.html" class="cta-button">Cotizar</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card">
+            </div>
+
+            <div class="service-detail reverse">
+                <div class="service-content">
                     <div class="service-icon">✨</div>
-                    <h3>Branding Digital</h3>
-                    <p>Desarrollo y fortalecimiento de la identidad digital de tu marca.</p>
+                    <div class="service-info">
+                        <h3>Branding Digital</h3>
+                        <p>Desarrollamos y fortalecemos la identidad digital de tu marca. Creamos una presencia coherente y memorable que transmita los valores y personalidad de tu negocio.</p>
+                        <ul class="service-features">
+                            <li>Desarrollo de identidad visual digital</li>
+                            <li>Creación de manual de marca para redes</li>
+                            <li>Optimización de perfiles y biografías</li>
+                            <li>Definición de tono y voz de marca</li>
+                            <li>Estrategia de naming y hashtags</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price">Desde $50.000 (proyecto único)</span>
+                            <a href="Contacto.html" class="cta-button">Cotizar</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="agenda" class="section">
+    <section class="packages section">
         <div class="container">
-            <h2>Agenda tu Consulta</h2>
-            <p style="text-align: center; margin-bottom: 2rem; font-size: 1.1rem; color: #555;">
-                Elegí el mejor horario para tu consulta gratuita
-            </p>
-            <div class="schedule-grid">
-                <div class="schedule-card">
-                    <h3 class="schedule-title">Consulta Express</h3>
-                    <p class="schedule-time">30 minutos</p>
-                    <p>Análisis rápido de tu presencia digital actual</p>
-                    <div style="margin-top: 1rem;">
-                        <a href="#" class="cta-button">Reservar</a>
+            <h2>Paquetes Integrales</h2>
+            <p class="section-subtitle">Combina servicios y ahorra hasta un 25%</p>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Starter</h3>
+                        <p class="package-subtitle">Ideal para emprendedores</p>
+                    </div>
+                    <div class="package-price">
+                        <span class="price-amount">$45.000</span>
+                        <span class="price-period">/mes</span>
+                    </div>
+                    <ul class="package-features">
+                        <li>✓ 12 posts mensuales</li>
+                        <li>✓ 6 stories por semana</li>
+                        <li>✓ Community management básico</li>
+                        <li>✓ Reporte mensual</li>
+                        <li>✓ 1 red social</li>
+                    </ul>
+                    <a href="Contacto.html" class="cta-button">Elegir Plan</a>
+                </div>
+
+                <div class="package-card featured">
+                    <div class="package-badge">Más Popular</div>
+                    <div class="package-header">
+                        <h3>Professional</h3>
+                        <p class="package-subtitle">Para empresas en crecimiento</p>
+                    </div>
+                    <div class="package-price">
+                        <span class="price-amount">$80.000</span>
+                        <span class="price-period">/mes</span>
+                    </div>
+                    <ul class="package-features">
+                        <li>✓ 20 posts mensuales</li>
+                        <li>✓ Stories ilimitadas</li>
+                        <li>✓ Community management completo</li>
+                        <li>✓ Análisis y métricas detalladas</li>
+                        <li>✓ 2 redes sociales</li>
+                        <li>✓ Estrategia mensual</li>
+                    </ul>
+                    <a href="Contacto.html" class="cta-button">Elegir Plan</a>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Premium</h3>
+                        <p class="package-subtitle">Solución completa</p>
+                    </div>
+                    <div class="package-price">
+                        <span class="price-amount">$120.000</span>
+                        <span class="price-period">/mes</span>
+                    </div>
+                    <ul class="package-features">
+                        <li>✓ 30 posts mensuales</li>
+                        <li>✓ Contenido multimedia</li>
+                        <li>✓ Community management 24/7</li>
+                        <li>✓ Publicidad digital incluida</li>
+                        <li>✓ 3 redes sociales</li>
+                        <li>✓ Consultoría estratégica</li>
+                        <li>✓ Reporte semanal</li>
+                    </ul>
+                    <a href="Contacto.html" class="cta-button">Elegir Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process section">
+        <div class="container">
+            <h2>Nuestro Proceso</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Análisis Inicial</h3>
+                        <p>Estudiamos tu marca, competencia y objetivos para crear una estrategia personalizada.</p>
                     </div>
                 </div>
-                <div class="schedule-card">
-                    <h3 class="schedule-title">Consulta Estratégica</h3>
-                    <p class="schedule-time">60 minutos</p>
-                    <p>Desarrollo de estrategia personalizada para tu marca</p>
-                    <div style="margin-top: 1rem;">
-                        <a href="#" class="cta-button">Reservar</a>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Estrategia</h3>
+                        <p>Desarrollamos un plan de contenidos y cronograma adaptado a tu audiencia.</p>
                     </div>
                 </div>
-                <div class="schedule-card">
-                    <h3 class="schedule-title">Consulta Premium</h3>
-                    <p class="schedule-time">90 minutos</p>
-                    <p>Análisis completo + estrategia + plan de acción</p>
-                    <div style="margin-top: 1rem;">
-                        <a href="#" class="cta-button">Reservar</a>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Ejecución</h3>
+                        <p>Implementamos la estrategia creando contenido y gestionando tus redes sociales.</p>
                     </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Optimización</h3>
+                        <p>Analizamos resultados y optimizamos continuamente para mejorar el rendimiento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para potenciar tu presencia digital?</h2>
+                <p>Agenda una consulta gratuita y descubre cómo podemos ayudarte a alcanzar tus objetivos</p>
+                <div class="cta-buttons">
+                    <a href="Contacto.html" class="cta-button">Cotizar Servicio</a>
+                    <a href="./Agenda/Agenda1.html" class="cta-button secondary">Agendar Consulta</a>
                 </div>
             </div>
         </div>
@@ -123,3 +301,5 @@
         </div>
     </footer>
     <script src="script.js"></script>
+</body>
+</html>
